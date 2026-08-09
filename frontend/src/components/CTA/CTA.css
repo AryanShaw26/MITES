@@ -1,0 +1,818 @@
+/* =========================================
+   CTA SECTION
+========================================= */
+
+.cta-section {
+    width: 100%;
+    padding: 90px 6%;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   CTA CONTAINER
+========================================= */
+
+.cta-container {
+    position: relative;
+
+    max-width: 1250px;
+    min-height: 600px;
+
+    margin: 0 auto;
+
+    padding: 70px 70px 45px;
+
+    overflow: hidden;
+
+    border-radius: 32px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #6947ef 0%,
+            #5267e8 55%,
+            #3f83e9 100%
+        );
+
+    box-shadow:
+        0 25px 60px rgba(79, 70, 229, 0.22);
+}
+
+
+/* Decorative Glow */
+
+.cta-container::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    right: 170px;
+    top: 40px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    filter: blur(2px);
+}
+
+
+/* =========================================
+   CTA CONTENT
+========================================= */
+
+.cta-content {
+    position: relative;
+
+    z-index: 3;
+
+    width: 55%;
+}
+
+
+.cta-badge {
+    display: inline-flex;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    color: #6346ed;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+}
+
+
+.cta-content h2 {
+    margin: 28px 0 20px;
+
+    color: white;
+
+    font-size: 52px;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+
+    font-weight: 800;
+}
+
+
+.cta-content h2 span {
+    color: #d9d4ff;
+}
+
+
+.cta-content p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.cta-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 32px;
+}
+
+
+.cta-primary {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 16px 25px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: white;
+
+    color: #6247ed;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s ease;
+}
+
+
+.cta-primary:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+.cta-primary span {
+    font-size: 22px;
+}
+
+
+.cta-secondary {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 25px;
+
+    border: 1.5px solid rgba(255, 255, 255, 0.75);
+
+    border-radius: 12px;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+
+    transform: translateY(-3px);
+}
+
+
+.play-icon {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid white;
+
+    border-radius: 50%;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.cta-benefits {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-top: 32px;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+.benefit-divider {
+    width: 1px;
+
+    height: 18px;
+
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* =========================================
+   DASHBOARD VISUAL
+========================================= */
+
+.cta-visual {
+    position: absolute;
+
+    z-index: 2;
+
+    top: 95px;
+    right: 65px;
+
+    width: 45%;
+
+    height: 350px;
+}
+
+
+.cta-dashboard {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    box-shadow:
+        0 25px 50px rgba(23, 37, 84, 0.25);
+}
+
+
+/* =========================================
+   DASHBOARD SIDEBAR
+========================================= */
+
+.cta-dashboard-sidebar {
+    width: 95px;
+
+    flex-shrink: 0;
+
+    padding: 20px 12px;
+
+    background: #f9f9ff;
+
+    border-right: 1px solid #edf0f6;
+}
+
+
+.cta-dashboard-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-bottom: 25px;
+
+    color: #172554;
+
+    font-size: 10px;
+}
+
+
+.mini-logo {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background: #6c4df6;
+
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: 800;
+}
+
+
+.cta-sidebar-item {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.cta-sidebar-item.active {
+    background: #eee9ff;
+
+    color: #6548ef;
+}
+
+
+/* =========================================
+   DASHBOARD MAIN
+========================================= */
+
+.cta-dashboard-main {
+    flex: 1;
+
+    padding: 25px;
+
+    background: #ffffff;
+}
+
+
+.cta-dashboard-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    color: #172554;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   TASK LIST
+========================================= */
+
+.cta-task-list {
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #fafaff;
+}
+
+
+.cta-task {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px 5px;
+
+    border-bottom: 1px solid #eef0f5;
+
+    color: #334155;
+
+    font-size: 11px;
+}
+
+
+.cta-task:last-child {
+    border-bottom: none;
+}
+
+
+.cta-task-checkbox {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 1.5px solid #cbd5e1;
+
+    border-radius: 5px;
+
+    color: white;
+
+    font-size: 10px;
+}
+
+
+.cta-task.completed .cta-task-checkbox {
+    background: #6c4df6;
+
+    border-color: #6c4df6;
+}
+
+
+.cta-task small {
+    margin-left: auto;
+
+    color: #94a3b8;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   UPCOMING
+========================================= */
+
+.cta-upcoming {
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #fafaff;
+}
+
+
+.cta-upcoming h4 {
+    margin: 0 0 15px;
+
+    color: #172554;
+
+    font-size: 12px;
+}
+
+
+.cta-calendar {
+    display: flex;
+
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+
+.cta-calendar div {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.cta-calendar small {
+    color: #94a3b8;
+
+    font-size: 8px;
+}
+
+
+.cta-calendar strong {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #475569;
+
+    font-size: 10px;
+}
+
+
+.cta-calendar .calendar-active strong {
+    background: #6548ef;
+
+    color: white;
+}
+
+
+/* =========================================
+   FLOATING ELEMENTS
+========================================= */
+
+.floating-check {
+    position: absolute;
+
+    z-index: 5;
+
+    top: -35px;
+    right: -15px;
+
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #a78bfa,
+        #6548ef
+    );
+
+    color: white;
+
+    font-size: 42px;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.2);
+
+    transform: rotate(7deg);
+}
+
+
+.floating-calendar {
+    position: absolute;
+
+    z-index: 5;
+
+    bottom: -35px;
+    left: 80px;
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #a78bfa,
+        #6548ef
+    );
+
+    color: white;
+
+    font-size: 28px;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   TRUST SECTION
+========================================= */
+
+.cta-trust {
+    position: absolute;
+
+    z-index: 4;
+
+    bottom: 38px;
+
+    left: 0;
+    right: 0;
+
+    text-align: center;
+}
+
+
+.cta-trust p {
+    margin: 0 0 18px;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 14px;
+}
+
+
+.cta-trust-logos {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 45px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .cta-container {
+        padding: 55px 45px 45px;
+    }
+
+    .cta-content h2 {
+        font-size: 42px;
+    }
+
+    .cta-visual {
+        right: 40px;
+
+        width: 44%;
+    }
+
+    .cta-trust-logos {
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .cta-container {
+        min-height: auto;
+
+        padding: 55px 35px 40px;
+    }
+
+    .cta-content {
+        width: 100%;
+    }
+
+    .cta-content h2 {
+        font-size: 40px;
+    }
+
+    .cta-visual {
+        position: relative;
+
+        top: auto;
+        right: auto;
+
+        width: 100%;
+
+        height: 320px;
+
+        margin-top: 50px;
+    }
+
+    .cta-trust {
+        position: relative;
+
+        bottom: auto;
+
+        margin-top: 45px;
+    }
+
+    .cta-benefits {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-container {
+        padding: 40px 25px;
+
+        border-radius: 24px;
+    }
+
+    .cta-content h2 {
+        font-size: 32px;
+    }
+
+    .cta-content p {
+        font-size: 15px;
+    }
+
+    .cta-content p br {
+        display: none;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        justify-content: center;
+    }
+
+    .cta-benefits {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .benefit-divider {
+        display: none;
+    }
+
+    .cta-visual {
+        height: 260px;
+    }
+
+    .cta-dashboard-sidebar {
+        display: none;
+    }
+
+    .cta-dashboard-main {
+        padding: 18px;
+    }
+
+    .cta-trust-logos {
+        flex-wrap: wrap;
+
+        gap: 18px;
+
+        font-size: 14px;
+    }
+
+    .floating-check {
+        width: 55px;
+        height: 55px;
+
+        font-size: 28px;
+    }
+
+    .floating-calendar {
+        width: 50px;
+        height: 50px;
+
+        font-size: 20px;
+    }
+}
