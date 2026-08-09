@@ -1,0 +1,1106 @@
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 5% 70px;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(124, 92, 246, 0.12),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fafaff 55%,
+            #f4f2ff 100%
+        );
+}
+
+
+/* =========================================
+   HERO LEFT
+========================================= */
+
+.hero-left {
+    width: 50%;
+    padding-left: 3%;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   HERO BADGE
+========================================= */
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 10px 18px;
+
+    border: 1px solid #ddd6fe;
+    border-radius: 30px;
+
+    background: #f5f3ff;
+
+    color: #5b4de8;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   HERO HEADING
+========================================= */
+
+.hero-left h1 {
+    margin: 0;
+
+    max-width: 650px;
+
+    color: #11183f;
+
+    font-size: clamp(48px, 5vw, 72px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2.5px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   HERO DESCRIPTION
+========================================= */
+
+.hero-left > p {
+    max-width: 570px;
+
+    margin-top: 25px;
+    margin-bottom: 0;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   BUTTON CONTAINER
+========================================= */
+
+.get-started-live-demo-container {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 35px;
+}
+
+
+/* =========================================
+   GET STARTED BUTTON
+========================================= */
+
+.get-started-free {
+    padding: 16px 28px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #6c4df6,
+        #4f8df7
+    );
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(108, 77, 246, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.get-started-free:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(108, 77, 246, 0.35);
+}
+
+
+/* =========================================
+   LIVE DEMO BUTTON
+========================================= */
+
+.live-demo {
+    padding: 15px 27px;
+
+    border: 1.5px solid #8b7cf6;
+    border-radius: 12px;
+
+    background: white;
+
+    color: #6046e8;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.live-demo:hover {
+    background: #f5f3ff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   TRUST SECTION
+========================================= */
+
+.hero-trust-section {
+    margin-top: 55px;
+}
+
+
+/* =========================================
+   FEATURE ROW
+========================================= */
+
+.hero-features {
+    display: flex;
+    align-items: center;
+
+    gap: 38px;
+}
+
+.hero-feature {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color: #172554;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.feature-icon {
+    color: #6046e8;
+
+    font-size: 21px;
+}
+
+
+/* =========================================
+   TRUSTED USERS
+========================================= */
+
+.trusted-users {
+    margin-top: 35px;
+}
+
+.trusted-title {
+    margin: 0 0 13px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   USER CONTENT
+========================================= */
+
+.users-content {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   USER AVATARS
+========================================= */
+
+.user-avatars {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatars img {
+    width: 40px;
+    height: 40px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid white;
+
+    margin-left: -9px;
+}
+
+.user-avatars img:first-child {
+    margin-left: 0;
+}
+
+
+/* =========================================
+   MORE USERS
+========================================= */
+
+.more-users {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: -9px;
+
+    border-radius: 50%;
+
+    border: 3px solid white;
+
+    background: #eee9ff;
+
+    color: #6046e8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   USER COUNT
+========================================= */
+
+.user-count {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-count strong {
+    color: #172554;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+.user-count span {
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   HERO RIGHT
+========================================= */
+
+.hero-right {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   DASHBOARD PREVIEW
+========================================= */
+
+.dashboard-preview {
+    width: 100%;
+    max-width: 760px;
+
+    min-height: 570px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    box-shadow:
+        0 30px 70px rgba(79, 70, 229, 0.16);
+
+    transform: perspective(1200px) rotateY(-2deg);
+
+    transition: transform 0.4s ease;
+}
+
+.dashboard-preview:hover {
+    transform:
+        perspective(1200px)
+        rotateY(0deg)
+        translateY(-5px);
+}
+
+
+/* =========================================
+   DASHBOARD SIDEBAR
+========================================= */
+
+.dashboard-sidebar {
+    width: 185px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px 14px;
+
+    border-right: 1px solid #eef0f6;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   DASHBOARD LOGO
+========================================= */
+
+.dashboard-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0 8px;
+
+    margin-bottom: 30px;
+}
+
+.dashboard-logo img {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+}
+
+.dashboard-logo span {
+    color: #11183f;
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   SIDEBAR MENU
+========================================= */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px 12px;
+
+    border-radius: 9px;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.sidebar-item:hover {
+    background: #f5f3ff;
+
+    color: #6046e8;
+}
+
+.sidebar-item.active {
+    background: linear-gradient(
+        135deg,
+        #6c4df6,
+        #5c65ee
+    );
+
+    color: white;
+
+    box-shadow:
+        0 6px 15px rgba(108, 77, 246, 0.2);
+}
+
+
+/* =========================================
+   DASHBOARD USER
+========================================= */
+
+.dashboard-user {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: auto;
+
+    padding: 10px 5px;
+}
+
+.user-avatar,
+.small-avatar {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #6c4df6,
+        #4f8df7
+    );
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.user-info strong {
+    color: #172554;
+
+    font-size: 10px;
+}
+
+.user-info span {
+    color: #94a3b8;
+
+    font-size: 8px;
+}
+
+.user-avatar-image {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 3px solid white;
+
+    margin-left: -9px;
+
+    background: linear-gradient(135deg, #6c4df6, #4f8df7);
+
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.user-avatar-image:first-child {
+    margin-left: 0;
+}
+
+/* =========================================
+   DASHBOARD MAIN
+========================================= */
+
+.dashboard-main {
+    flex: 1;
+
+    padding: 25px;
+
+    min-width: 0;
+
+    background: #fcfcff;
+}
+
+
+/* =========================================
+   DASHBOARD TOPBAR
+========================================= */
+
+.dashboard-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 28px;
+}
+
+.dashboard-search {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 10px 14px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+.dashboard-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    color: #475569;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   GREETING
+========================================= */
+
+.dashboard-greeting {
+    margin-bottom: 20px;
+}
+
+.dashboard-greeting h2 {
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+.dashboard-greeting p {
+    margin: 5px 0 0;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   DASHBOARD CONTENT
+========================================= */
+
+.dashboard-content {
+    display: grid;
+
+    grid-template-columns: 1.25fr 0.9fr;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   DASHBOARD CARDS
+========================================= */
+
+.dashboard-card {
+    padding: 16px;
+
+    border: 1px solid #edf0f5;
+
+    border-radius: 13px;
+
+    background: white;
+
+    box-shadow:
+        0 5px 20px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.card-header h3 {
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+.card-count {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eee9ff;
+
+    color: #6046e8;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TASK LIST
+========================================= */
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+.task-check {
+    width: 17px;
+    height: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #6c4df6;
+
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: 800;
+}
+
+.task-check.empty {
+    background: white;
+
+    border: 1.5px solid #cbd5e1;
+}
+
+.task-item > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    gap: 5px;
+}
+
+.task-item strong {
+    color: #334155;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+.task-item small {
+    color: #94a3b8;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   NOTES
+========================================= */
+
+.notes-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.note-item {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+.note-icon {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #eef2ff;
+
+    color: #6046e8;
+
+    font-size: 12px;
+}
+
+.note-item div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.note-item strong {
+    color: #334155;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+.note-item small {
+    color: #94a3b8;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.card-footer {
+    margin-top: 15px;
+
+    color: #6046e8;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   UPCOMING EVENTS
+========================================= */
+
+.upcoming-card {
+    min-height: 100px;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.event-icon {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #eef2ff;
+
+    color: #6046e8;
+
+    font-size: 13px;
+}
+
+.event-item div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.event-item strong {
+    color: #334155;
+
+    font-size: 9px;
+}
+
+.event-item small {
+    color: #94a3b8;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   CALENDAR
+========================================= */
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+
+    color: #172554;
+
+    font-size: 10px;
+}
+
+.calendar-weekdays,
+.calendar-days {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    text-align: center;
+
+    gap: 8px;
+}
+
+.calendar-weekdays {
+    margin-bottom: 10px;
+
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 600;
+}
+
+.calendar-days {
+    color: #475569;
+
+    font-size: 8px;
+}
+
+.calendar-days span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+}
+
+.calendar-days .today {
+    background: #6c4df6;
+
+    color: white;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .hero-left h1 {
+        font-size: 52px;
+    }
+
+    .dashboard-preview {
+        min-height: 500px;
+    }
+
+    .dashboard-sidebar {
+        width: 155px;
+    }
+
+    .dashboard-main {
+        padding: 18px;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .hero {
+        flex-direction: column;
+
+        padding-top: 60px;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-left {
+        padding-left: 0;
+
+        margin-bottom: 60px;
+    }
+
+    .hero-right {
+        width: 95%;
+    }
+
+    .dashboard-preview {
+        max-width: 850px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero-left h1 {
+        font-size: 42px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .hero-left > p {
+        font-size: 16px;
+    }
+
+    .get-started-live-demo-container {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .hero-features {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .dashboard-sidebar {
+        display: none;
+    }
+
+    .dashboard-preview {
+        min-height: 450px;
+
+        transform: none;
+    }
+
+    .dashboard-content {
+        grid-template-columns: 1fr;
+    }
+
+    .notes-card,
+    .calendar-card {
+        display: none;
+    }
+}

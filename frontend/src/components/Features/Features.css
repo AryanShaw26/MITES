@@ -1,0 +1,443 @@
+/* =========================================
+   FEATURES SECTION
+========================================= */
+
+.features-section {
+    width: 100%;
+
+    padding: 90px 6% 70px;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+
+/* Section Label */
+
+.section-label {
+    margin-bottom: 12px;
+
+    color: #6c4df6;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* Section Heading */
+
+.features-section h2,
+.how-it-works h2 {
+    margin: 0;
+
+    color: #11183f;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.8px;
+}
+
+
+/* Section Description */
+
+.section-description {
+    margin: 10px auto 35px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   FEATURE CARDS
+========================================= */
+
+.features-container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 28px;
+}
+
+
+/* Individual Card */
+
+.feature-card {
+    padding: 22px 20px;
+
+    min-height: 170px;
+
+    text-align: left;
+
+    border: 1px solid #e9eaf2;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 5px 20px rgba(15, 23, 42, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(79, 70, 229, 0.12);
+}
+
+
+/* =========================================
+   FEATURE ICONS
+========================================= */
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 14px;
+
+    border-radius: 12px;
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+
+/* Purple */
+
+.purple-icon {
+    background: #eee9ff;
+
+    color: #6c4df6;
+}
+
+
+/* Green */
+
+.green-icon {
+    background: #e8f8ef;
+
+    color: #16a66a;
+}
+
+
+/* Orange */
+
+.orange-icon {
+    background: #fff2df;
+
+    color: #f59e0b;
+}
+
+
+/* Blue */
+
+.blue-icon {
+    background: #e8f2ff;
+
+    color: #3284e8;
+}
+
+
+/* =========================================
+   FEATURE CARD TEXT
+========================================= */
+
+.feature-card h3 {
+    margin: 0 0 7px;
+
+    color: #172554;
+
+    font-size: 16px;
+
+    font-weight: 800;
+}
+
+
+.feature-card p {
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================
+   HOW IT WORKS
+========================================= */
+
+.how-it-works {
+    width: 100%;
+
+    padding: 15px 6% 85px;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   STEPS CONTAINER
+========================================= */
+
+.steps-container {
+    max-width: 1100px;
+
+    margin: 30px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   INDIVIDUAL STEP
+========================================= */
+
+.step {
+    display: flex;
+
+    align-items: center;
+
+    text-align: left;
+
+    flex: 1;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   STEP ICON
+========================================= */
+
+.step-icon {
+    width: 66px;
+    height: 66px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 27px;
+}
+
+
+/* Step Colors */
+
+.purple-step {
+    background: #f0ecff;
+
+    color: #6c4df6;
+}
+
+.green-step {
+    background: #eaf9f0;
+
+    color: #16a66a;
+}
+
+.orange-step {
+    background: #fff3df;
+
+    color: #f59e0b;
+}
+
+.blue-step {
+    background: #e9f3ff;
+
+    color: #3284e8;
+}
+
+
+/* =========================================
+   STEP CONTENT
+========================================= */
+
+.step-content {
+    flex: 1;
+}
+
+
+.step-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.step-title h3 {
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+.step-content p {
+    margin: 7px 0 0;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   STEP NUMBER
+========================================= */
+
+.step-number {
+    width: 19px;
+    height: 19px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+
+.purple-number {
+    background: #6c4df6;
+}
+
+
+.blue-number {
+    background: #3b82f6;
+}
+
+
+/* =========================================
+   STEP ARROW
+========================================= */
+
+.step-arrow {
+    color: #7c6ee8;
+
+    font-size: 25px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .features-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .steps-container {
+        flex-wrap: wrap;
+    }
+
+    .step {
+        min-width: 45%;
+    }
+
+    .step-arrow {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .features-section {
+        padding: 65px 20px 50px;
+    }
+
+    .features-section h2,
+    .how-it-works h2 {
+        font-size: 26px;
+    }
+
+    .section-description br {
+        display: none;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .feature-card {
+        min-height: auto;
+    }
+
+    .how-it-works {
+        padding: 20px 20px 60px;
+    }
+
+    .steps-container {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .step {
+        width: 100%;
+    }
+}

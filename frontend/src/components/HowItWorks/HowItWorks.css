@@ -1,0 +1,575 @@
+/* =========================================
+   HOW IT WORKS SECTION
+========================================= */
+
+.how-it-works-section {
+    width: 100%;
+
+    padding: 100px 6% 90px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fafaff 100%
+        );
+
+    text-align: center;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.how-it-works-header {
+    max-width: 800px;
+
+    margin: 0 auto 55px;
+}
+
+
+.how-it-works-label {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #6548ef;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+.how-it-works-header h2 {
+    margin: 0;
+
+    color: #11183f;
+
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    letter-spacing: -1.2px;
+}
+
+
+.how-it-works-header p {
+    margin: 18px 0 0;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   STEPS CONTAINER
+========================================= */
+
+.steps-container {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   INDIVIDUAL STEP
+========================================= */
+
+.work-step {
+    position: relative;
+
+    width: 250px;
+    min-height: 250px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px 20px;
+
+    border: 2px dashed #dfe2ec;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    transition: 0.3s ease;
+}
+
+
+.work-step:hover {
+    transform: translateY(-6px);
+
+    border-color: #c8c1ff;
+
+    box-shadow:
+        0 15px 35px rgba(79, 70, 229, 0.09);
+}
+
+
+/* =========================================
+   STEP NUMBER
+========================================= */
+
+.step-number {
+    position: absolute;
+
+    top: -16px;
+    left: 18px;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #6548ef;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 5px 12px rgba(101, 72, 239, 0.25);
+}
+
+
+.green-number {
+    background: #16b979;
+}
+
+
+.orange-number {
+    background: #f59e0b;
+}
+
+
+.blue-number {
+    background: #3b82f6;
+}
+
+
+/* =========================================
+   STEP ICON
+========================================= */
+
+.step-icon {
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    font-size: 48px;
+
+    font-weight: 500;
+}
+
+
+/* Purple */
+
+.purple-step-icon {
+    background: #f0ecff;
+
+    color: #6548ef;
+}
+
+
+/* Green */
+
+.green-step-icon {
+    background: #e8f9f0;
+
+    color: #16b979;
+}
+
+
+/* Orange */
+
+.orange-step-icon {
+    background: #fff3df;
+
+    color: #f59e0b;
+}
+
+
+/* Blue */
+
+.blue-step-icon {
+    background: #e9f3ff;
+
+    color: #3b82f6;
+}
+
+
+/* =========================================
+   STEP INFORMATION
+========================================= */
+
+.step-info h3 {
+    margin: 0;
+
+    color: #11183f;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+.step-info p {
+    margin: 10px 0 0;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ARROWS
+========================================= */
+
+.work-arrow {
+    flex-shrink: 0;
+
+    color: #6548ef;
+
+    font-size: 34px;
+
+    font-weight: 300;
+}
+
+
+/* =========================================
+   PRODUCTIVITY BANNER
+========================================= */
+
+.productivity-banner {
+    max-width: 1100px;
+
+    min-height: 140px;
+
+    margin: 70px auto 0;
+
+    padding: 28px 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5f1ff,
+            #eef5ff
+        );
+
+    box-shadow:
+        0 10px 35px rgba(79, 70, 229, 0.07);
+}
+
+
+/* =========================================
+   PRODUCTIVITY LEFT
+========================================= */
+
+.productivity-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    text-align: left;
+}
+
+
+.productivity-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #e9e3ff;
+
+    color: #6548ef;
+
+    font-size: 30px;
+}
+
+
+.productivity-content h3 {
+    margin: 0 0 8px;
+
+    color: #6548ef;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+.productivity-content p {
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.productivity-divider {
+    width: 1px;
+
+    height: 70px;
+
+    background: #d8dbe7;
+}
+
+
+/* =========================================
+   TRUSTED USERS
+========================================= */
+
+.trusted-productivity {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    text-align: left;
+}
+
+
+.productivity-avatars {
+    display: flex;
+
+    align-items: center;
+}
+
+
+.productivity-avatar,
+.productivity-users {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: -8px;
+
+    border-radius: 50%;
+
+    border: 3px solid white;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #3b82f6
+    );
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.productivity-avatar:first-child {
+    margin-left: 0;
+}
+
+
+.productivity-users {
+    background: #6548ef;
+
+    font-size: 12px;
+}
+
+
+.trusted-text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.trusted-text strong {
+    color: #11183f;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+
+.trusted-text span {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .steps-container {
+        gap: 10px;
+    }
+
+    .work-step {
+        width: 220px;
+    }
+
+    .work-arrow {
+        font-size: 25px;
+    }
+
+    .productivity-banner {
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .how-it-works-header h2 {
+        font-size: 34px;
+    }
+
+    .steps-container {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px;
+    }
+
+    .work-step {
+        width: 100%;
+    }
+
+    .work-arrow {
+        display: none;
+    }
+
+    .productivity-banner {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .productivity-divider {
+        width: 100%;
+        height: 1px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .how-it-works-section {
+        padding: 70px 20px;
+    }
+
+    .how-it-works-header h2 {
+        font-size: 28px;
+    }
+
+    .how-it-works-header p {
+        font-size: 15px;
+    }
+
+    .how-it-works-header p br {
+        display: none;
+    }
+
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    .work-step {
+        min-height: 230px;
+    }
+
+    .productivity-banner {
+        padding: 25px 20px;
+    }
+
+    .productivity-content {
+        align-items: flex-start;
+    }
+
+    .productivity-content p br {
+        display: none;
+    }
+
+    .trusted-productivity {
+        width: 100%;
+    }
+}
