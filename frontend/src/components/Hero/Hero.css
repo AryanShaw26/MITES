@@ -6,10 +6,12 @@
     width: 100%;
     min-height: calc(100vh - 80px);
 
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 46%) minmax(0, 54%);
     align-items: center;
+    gap: 30px;
 
-    padding: 80px 5% 70px;
+    padding: 80px 2.5vw 70px;
 
     position: relative;
     overflow: hidden;
@@ -34,8 +36,9 @@
 ========================================= */
 
 .hero-left {
-    width: 50%;
-    padding-left: 3%;
+    width: 100%;
+    max-width: 760px;
+    padding-left: 0;
 
     position: relative;
     z-index: 2;
@@ -347,10 +350,10 @@
 ========================================= */
 
 .hero-right {
-    width: 50%;
+    width: 100%;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     position: relative;
@@ -365,7 +368,7 @@
 
 .dashboard-preview {
     width: 100%;
-    max-width: 760px;
+    max-width: 900px;
 
     min-height: 570px;
 
@@ -1029,9 +1032,9 @@
 @media (max-width: 950px) {
 
     .hero {
-        flex-direction: column;
-
-        padding-top: 60px;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 60px 5vw;
     }
 
     .hero-left,
@@ -1041,15 +1044,17 @@
 
     .hero-left {
         padding-left: 0;
-
-        margin-bottom: 60px;
+        margin-bottom: 0;
+        max-width: 760px;
     }
 
     .hero-right {
-        width: 95%;
+        width: 100%;
+        justify-content: center;
     }
 
     .dashboard-preview {
+        width: 100%;
         max-width: 850px;
     }
 }
