@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png";
 
 const Workspace = () => {
   return (
-    <section className="workspace-section">
+    <section id="about" className="workspace-section">
 
       <div className="workspace-container">
 

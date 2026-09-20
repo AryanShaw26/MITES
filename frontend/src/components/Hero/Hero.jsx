@@ -1,8 +1,10 @@
 import logo from "../../assets/logo.png";
 import "./Hero.css";
+import { useNavigate } from "react-router-dom";
 const Hero = () => {
+  const navigate=useNavigate()
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className="hero-left">
         {/* Badge */}
         <div className="hero-badge">✦ Your Notes, Your Tasks, Your Way.</div>
@@ -22,7 +24,7 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="get-started-live-demo-container">
-          <button className="get-started-free">Get Started Free →</button>
+          <button className="get-started-free" onClick={()=>navigate("/register")}>Get Started Free →</button>
 
           <button className="live-demo">Live Demo ◉</button>
         </div>

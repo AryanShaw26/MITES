@@ -5,7 +5,7 @@ const Features = () => {
     <>
       {/* ================= FEATURES SECTION ================= */}
 
-      <section className="features-section">
+      <section id="features" className="features-section">
 
         <div className="section-label">
           FEATURES
