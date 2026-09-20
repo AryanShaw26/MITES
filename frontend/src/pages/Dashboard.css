@@ -297,6 +297,8 @@
 .notes-list {
   display: flex;
   flex-direction: column;
+
+  
 }
 
 .note-item {
