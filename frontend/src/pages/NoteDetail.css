@@ -1,0 +1,233 @@
+.note-detail-page {
+  width: 100%;
+  min-height: 100%;
+  padding: 35px 40px;
+  box-sizing: border-box;
+}
+
+.note-detail-topbar {
+  margin-bottom: 20px;
+}
+
+.detail-back-button {
+  border: none;
+  background: transparent;
+  color: #5b5ce2;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.detail-back-button:hover {
+  text-decoration: underline;
+}
+
+.note-detail-error {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  border-radius: 9px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.note-detail-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e6e7ef;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 5px 25px rgba(20, 30, 60, 0.05);
+}
+
+.note-detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececf2;
+  margin-bottom: 25px;
+}
+
+.note-detail-label {
+  display: inline-block;
+  color: #6366f1;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 8px;
+}
+
+.note-detail-header h1 {
+  margin: 0 0 7px;
+  color: #101936;
+  font-size: 30px;
+  line-height: 1.25;
+}
+
+.note-detail-header p {
+  margin: 0;
+  color: #98a2b3;
+  font-size: 13px;
+}
+
+.note-detail-title-input {
+  width: min(700px, 100%);
+  box-sizing: border-box;
+  border: 1px solid #d9dce7;
+  border-radius: 9px;
+  padding: 11px 13px;
+  color: #101936;
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 700;
+  outline: none;
+}
+
+.note-detail-title-input:focus,
+.note-detail-textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.note-detail-actions {
+  display: flex;
+  gap: 9px;
+  flex-shrink: 0;
+}
+
+.edit-note-button,
+.detail-save-button {
+  border: none;
+  border-radius: 9px;
+  background: #6366f1;
+  color: #ffffff;
+  padding: 10px 17px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-note-button:hover,
+.detail-save-button:hover {
+  background: #4f46e5;
+}
+
+.delete-note-button {
+  border: none;
+  border-radius: 9px;
+  background: #fff0f0;
+  color: #d92d20;
+  padding: 10px 17px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete-note-button:hover {
+  background: #ffe0e0;
+}
+
+.note-detail-content {
+  color: #344054;
+  font-size: 16px;
+  line-height: 1.85;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.empty-detail-content {
+  color: #98a2b3;
+  font-style: italic;
+}
+
+.note-detail-card label {
+  display: block;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.note-detail-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 380px;
+  border: 1px solid #d9dce7;
+  border-radius: 10px;
+  padding: 15px;
+  color: #344054;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.7;
+  outline: none;
+}
+
+.detail-edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.detail-cancel-button {
+  border: 1px solid #d9dce7;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #475467;
+  padding: 10px 17px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.detail-cancel-button:hover {
+  background: #f8f8fb;
+}
+
+.detail-save-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.note-detail-state {
+  background: #ffffff;
+  border: 1px dashed #d9dce7;
+  border-radius: 13px;
+  padding: 55px 25px;
+  text-align: center;
+  color: #667085;
+}
+
+@media (max-width: 700px) {
+  .note-detail-page {
+    padding: 25px 18px;
+  }
+
+  .note-detail-card {
+    padding: 22px;
+  }
+
+  .note-detail-header {
+    flex-direction: column;
+  }
+
+  .note-detail-actions {
+    width: 100%;
+  }
+
+  .edit-note-button,
+  .delete-note-button {
+    flex: 1;
+  }
+
+  .note-detail-header h1 {
+    font-size: 25px;
+  }
+}

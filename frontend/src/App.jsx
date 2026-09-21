@@ -9,6 +9,9 @@ import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute/PublicRoute";
 import Tasks from "./pages/Tasks";
 import Calendar from "./pages/Calendar";
+import Notes from "./pages/Notes";
+import SectionNotes from "./pages/SectionNotes";
+import NoteDetail from "./pages/NoteDetail";
 function App() {
   return (
     <BrowserRouter>
@@ -59,6 +62,38 @@ function App() {
           element={
             <ProtectedRoute>
               <Calendar />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/notes"
+          element={
+            <ProtectedRoute>
+              <Notes />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/notes/:sectionId"
+          element={
+            <ProtectedRoute>
+              <SectionNotes />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/notes/:sectionId"
+          element={
+            <ProtectedRoute>
+              <SectionNotes />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/notes/note/:noteId"
+          element={
+            <ProtectedRoute>
+              <NoteDetail />
             </ProtectedRoute>
           }
         />
