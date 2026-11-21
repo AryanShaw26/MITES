@@ -12,6 +12,9 @@ import Calendar from "./pages/Calendar";
 import Notes from "./pages/Notes";
 import SectionNotes from "./pages/SectionNotes";
 import NoteDetail from "./pages/NoteDetail";
+import Events from "./pages/Events";
+import Analytics from "./pages/Analytics";
+
 function App() {
   return (
     <BrowserRouter>
@@ -82,18 +85,28 @@ function App() {
           }
         />
         <Route
-          path="/notes/:sectionId"
-          element={
-            <ProtectedRoute>
-              <SectionNotes />
-            </ProtectedRoute>
-          }
-        />
-        <Route
           path="/notes/note/:noteId"
           element={
             <ProtectedRoute>
               <NoteDetail />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Version 3 Routes */}
+        <Route
+          path="/events"
+          element={
+            <ProtectedRoute>
+              <Events />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/analytics"
+          element={
+            <ProtectedRoute>
+              <Analytics />
             </ProtectedRoute>
           }
         />

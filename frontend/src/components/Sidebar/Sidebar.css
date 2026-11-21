@@ -1,25 +1,30 @@
 .dashboard-sidebar {
   width: 240px;
   min-height: 100vh;
-  background: #ffffff;
-  border-right: 1px solid #e8e8ef;
+  background: var(--mites-surface, #ffffff);
+  border-right: 1px solid var(--mites-border, #e7eaf3);
   display: flex;
   flex-direction: column;
-  padding: 25px 15px;
+  padding: 24px 14px;
   box-sizing: border-box;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 .dashboard-logo {
   font-size: 26px;
   font-weight: 800;
-  padding: 0 15px 35px;
-  color: #5b5ce2;
+  padding: 4px 14px 28px;
+  color: var(--mites-primary, #6254f5);
+  letter-spacing: -0.5px;
 }
 
 .dashboard-nav {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .nav-item {
@@ -28,70 +33,84 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 15px;
+  padding: 10px 14px;
   border: none;
-  border-radius: 10px;
+  border-radius: var(--mites-radius-sm, 10px);
   background: transparent;
-  color: #555;
+  color: var(--mites-muted, #65708d);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14.5px;
+  font-weight: 500;
   cursor: pointer;
   text-align: left;
-  transition: all 0.2s ease;
+  transition: all 0.18s ease;
 }
 
 .nav-item:hover {
-  background: #f3f3ff;
-  color: #5b5ce2;
+  background: var(--mites-primary-soft, #efedff);
+  color: var(--mites-primary, #6254f5);
 }
 
 .nav-item.active {
-  background: #eeeeff;
-  color: #5b5ce2;
+  background: var(--mites-primary-soft, #efedff);
+  color: var(--mites-primary, #6254f5);
   font-weight: 600;
+}
+
+.nav-icon {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar-bottom {
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
+  padding-top: 16px;
+  border-top: 1px solid var(--mites-border, #e7eaf3);
 }
 
 .nav-item.logout {
-  color: #d9534f;
+  color: var(--mites-danger, #ef5350);
 }
 
 .nav-item.logout:hover {
   background: #fff0f0;
-  color: #d9534f;
+  color: var(--mites-danger, #ef5350);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .dashboard-sidebar {
     width: 200px;
+    padding: 20px 10px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .dashboard-sidebar {
-    width: 70px;
-    padding: 20px 8px;
+    width: 68px;
+    padding: 16px 6px;
   }
 
   .dashboard-logo {
-    padding: 0 0 30px;
+    padding: 0 0 20px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .nav-item {
     justify-content: center;
-    padding: 12px 8px;
-    font-size: 0;
+    padding: 10px 0;
   }
 
-  .nav-item::first-letter {
-    font-size: 18px;
+  .nav-label {
+    display: none;
+  }
+
+  .nav-icon {
+    font-size: 20px;
   }
 }

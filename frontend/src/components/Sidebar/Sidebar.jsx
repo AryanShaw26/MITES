@@ -10,64 +10,44 @@ function Sidebar() {
     navigate("/", { replace: true });
   };
 
+  const navItems = [
+    { path: "/dashboard", label: "Dashboard", icon: "🏠" },
+    { path: "/tasks", label: "Tasks", icon: "✅" },
+    { path: "/notes", label: "Notes", icon: "📝" },
+    { path: "/calendar", label: "Calendar", icon: "📅" },
+    { path: "/events", label: "Events", icon: "🎯" },
+    { path: "/analytics", label: "Analytics", icon: "📊" },
+  ];
+
   return (
     <aside className="dashboard-sidebar">
-
       <div className="dashboard-logo">
-        MITES
+        <Link to="/dashboard" style={{ textDecoration: "none", color: "inherit" }}>
+          MITES
+        </Link>
       </div>
 
       <nav className="dashboard-nav">
-
-        <Link
-          to="/dashboard"
-          className={`nav-item ${
-            location.pathname === "/dashboard"
-              ? "active"
-              : ""
-          }`}
-        >
-          🏠 Dashboard
-        </Link>
-
-        <Link
-          to="/tasks"
-          className={`nav-item ${
-            location.pathname === "/tasks"
-              ? "active"
-              : ""
-          }`}
-        >
-          ✅ Tasks
-        </Link>
-
-        <Link
-          to="/notes"
-          className="nav-item"
-        >
-          📝 Notes
-        </Link>
-
-        <Link
-          to="/calendar"
-          className={`nav-item ${
-            location.pathname === "/calendar"
-              ? "active"
-              : ""
-          }`}
-        >
-          📅 Calendar
-        </Link>
-
+        {navItems.map((item) => (
+          <Link
+            key={item.path}
+            to={item.path}
+            className={`nav-item ${location.pathname.startsWith(item.path) ? "active" : ""}`}
+          >
+            <span className="nav-icon">{item.icon}</span>
+            <span className="nav-label">{item.label}</span>
+          </Link>
+        ))}
       </nav>
 
       <div className="sidebar-bottom">
-
         <button
           type="button"
-          className="nav-item"
+          className="nav-item settings-btn"
+          onClick={() => alert("Settings are configured with default user preferences.")}
         >
-          ⚙️ Settings
+          <span className="nav-icon">⚙️</span>
+          <span className="nav-label">Settings</span>
         </button>
 
         <button
@@ -75,11 +55,10 @@ function Sidebar() {
           className="nav-item logout"
           onClick={handleLogout}
         >
-          🚪 Logout
+          <span className="nav-icon">🚪</span>
+          <span className="nav-label">Logout</span>
         </button>
-
       </div>
-
     </aside>
   );
 }

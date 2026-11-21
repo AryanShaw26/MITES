@@ -1,0 +1,34 @@
+:root {
+  --mites-bg: #f8f9fd;
+  --mites-surface: #ffffff;
+  --mites-text: #10152f;
+  --mites-muted: #65708d;
+  --mites-border: #e7eaf3;
+  --mites-primary: #6254f5;
+  --mites-primary-soft: #efedff;
+  --mites-success: #20b981;
+  --mites-warning: #f4a62a;
+  --mites-danger: #ef5350;
+  --mites-radius-sm: 10px;
+  --mites-radius-md: 16px;
+  --mites-radius-lg: 20px;
+  --mites-shadow-card: 0 4px 18px rgba(27, 35, 74, 0.045);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--mites-bg);
+  color: var(--mites-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-family: inherit;
+}
