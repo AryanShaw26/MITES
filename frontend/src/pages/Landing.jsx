@@ -1,5 +1,5 @@
 import Hero from "../components/Hero/Hero";
-import Navbar from "../components/Navbar/Navbar.jsx";
+import Navbar from "../components/Navbar/NavBar.jsx";
 import Features from "../components/Features/Features";
 import Workspace from "../components/Workspace/Workspace";
 import HowItWorks from "../components/HowItWorks/HowItWorks";
