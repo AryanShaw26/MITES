@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { apiRequest } from "../services/api";
 import "./Register.css";
+
 function Register() {
   const navigate = useNavigate();
 
@@ -27,29 +29,17 @@ function Register() {
     setLoading(true);
 
     try {
-      const response = await fetch(
-        "http://127.0.0.1:8000/auth/register",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.detail || "Registration failed");
-      }
+      await apiRequest("/auth/register", {
+        method: "POST",
+        body: JSON.stringify(formData),
+      });
 
       alert("Registration successful!");
 
       navigate("/login");
 
     } catch (error) {
-      setError(error.message);
+      setError(error.message || "Registration failed. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -57,7 +47,6 @@ function Register() {
 
   return (
     <div className="register-page">
-
       <div className="register-card">
 
         <h1>Create your MITES account</h1>
@@ -130,7 +119,6 @@ function Register() {
         </p>
 
       </div>
-
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { apiRequest } from "../services/api";
 import "./Login.css";
 
 function Login() {
@@ -27,35 +28,20 @@ function Login() {
     setLoading(true);
 
     try {
-      const response = await fetch(
-        "http://127.0.0.1:8000/auth/login",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.detail || "Login failed");
-      }
+      const data = await apiRequest("/auth/login", {
+        method: "POST",
+        body: JSON.stringify(formData),
+      });
 
       // Save JWT token
-      localStorage.setItem(
-        "access_token",
-        data.access_token
-      );
+      localStorage.setItem("access_token", data.access_token);
 
       alert("Login successful!");
 
       navigate("/dashboard");
 
     } catch (error) {
-      setError(error.message);
+      setError(error.message || "Login failed. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -63,7 +49,6 @@ function Login() {
 
   return (
     <div className="login-page">
-
       <div className="login-card">
 
         <h1>Welcome Back to MITES</h1>
@@ -123,7 +108,6 @@ function Login() {
         </p>
 
       </div>
-
     </div>
   );
 }

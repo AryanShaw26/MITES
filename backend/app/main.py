@@ -1,3 +1,5 @@
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -22,14 +24,17 @@ app = FastAPI(
     version="3.0.0"
 )
 
+# CORS configuration
+frontend_url = os.getenv(
+    "FRONTEND_URL",
+    "http://localhost:5173"
+)
 
-# CORS configuration
-# CORS configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "FRONTEND_URL",
+        frontend_url,
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -39,7 +44,6 @@ app.add_middleware(
 # Create database tables
 Base.metadata.create_all(bind=engine)
 
-
 # Routers
 app.include_router(auth_router)
 app.include_router(task_router)
@@ -48,6 +52,7 @@ app.include_router(note_router)
 app.include_router(note_file_router)
 app.include_router(event_router)
 app.include_router(analytics_router)
+
 
 @app.get("/")
 def home():
