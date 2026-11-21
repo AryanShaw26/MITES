@@ -24,7 +24,10 @@ app = FastAPI(
     version="3.0.0"
 )
 
-# CORS configuration
+import os
+
+from fastapi.middleware.cors import CORSMiddleware
+
 frontend_url = os.getenv(
     "FRONTEND_URL",
     "http://localhost:5173"
@@ -34,13 +37,13 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
+        "https://mites-steel.vercel.app",
         frontend_url,
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # Create database tables
 Base.metadata.create_all(bind=engine)
 
