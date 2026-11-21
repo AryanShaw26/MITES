@@ -12,10 +12,14 @@ from app.models.note import Note
 from app.routers.notes import router as note_router
 from app.models.note_file import NoteFile
 from app.routers.note_files import router as note_file_router
+from app.models.event import Event
+from app.routers.events import router as event_router
+from app.routers.analytics import router as analytics_router
+
 app = FastAPI(
     title="MITES API",
     description="Backend API for MITES productivity application",
-    version="2.0.0"
+    version="3.0.0"
 )
 
 
@@ -33,12 +37,14 @@ app.add_middleware(
 Base.metadata.create_all(bind=engine)
 
 
-# Authentication routes
+# Routers
 app.include_router(auth_router)
 app.include_router(task_router)
 app.include_router(note_section_router)
 app.include_router(note_router)
 app.include_router(note_file_router)
+app.include_router(event_router)
+app.include_router(analytics_router)
 
 @app.get("/")
 def home():

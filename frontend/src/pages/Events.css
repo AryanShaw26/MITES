@@ -1,0 +1,212 @@
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.events-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--mites-text, #10152f);
+  margin: 0 0 4px 0;
+  letter-spacing: -0.5px;
+}
+
+.events-subtitle {
+  font-size: 14px;
+  color: var(--mites-muted, #65708d);
+  margin: 0;
+}
+
+.create-event-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: var(--mites-radius-sm, 10px);
+  background-color: var(--mites-primary, #6254f5);
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(98, 84, 245, 0.25);
+}
+
+.create-event-btn:hover {
+  background-color: #5143eb;
+  transform: translateY(-1px);
+}
+
+.events-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--mites-border, #e7eaf3);
+  padding-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 8px;
+  background-color: var(--mites-bg, #f8f9fd);
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--mites-border, #e7eaf3);
+}
+
+.filter-tab {
+  padding: 6px 16px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--mites-muted, #65708d);
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.filter-tab:hover {
+  color: var(--mites-text, #10152f);
+}
+
+.filter-tab.active {
+  background-color: var(--mites-surface, #ffffff);
+  color: var(--mites-primary, #6254f5);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.events-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--mites-muted, #65708d);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.events-loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--mites-muted, #65708d);
+  font-size: 14px;
+}
+
+.events-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--mites-surface, #ffffff);
+  border-radius: var(--mites-radius-md, 16px);
+  border: 1px solid var(--mites-border, #e7eaf3);
+}
+
+.empty-icon {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.events-empty h3 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  color: var(--mites-text, #10152f);
+}
+
+.events-empty p {
+  color: var(--mites-muted, #65708d);
+  font-size: 14px;
+  max-width: 360px;
+  margin: 0 auto 20px auto;
+}
+
+.events-error {
+  padding: 24px;
+  text-align: center;
+  background: #fef0f0;
+  border-radius: var(--mites-radius-md, 16px);
+  color: var(--mites-danger, #ef5350);
+}
+
+.retry-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: var(--mites-primary, #6254f5);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(16, 21, 47, 0.45);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.confirm-dialog {
+  background: #ffffff;
+  border-radius: var(--mites-radius-md, 16px);
+  padding: 24px 28px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.confirm-dialog h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: var(--mites-text, #10152f);
+}
+
+.confirm-dialog p {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: var(--mites-muted, #65708d);
+  line-height: 1.4;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--mites-border, #e7eaf3);
+  background: transparent;
+  color: var(--mites-muted, #65708d);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  background: var(--mites-danger, #ef5350);
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+}

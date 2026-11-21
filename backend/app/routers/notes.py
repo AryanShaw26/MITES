@@ -15,6 +15,25 @@ router = APIRouter(
 
 
 @router.get(
+    "/",
+    response_model=list[NoteResponse]
+)
+def get_all_notes(
+    limit: int = None,
+    db: Session = Depends(get_db),
+    user_id: int = Depends(get_current_user_id),
+):
+    query = (
+        db.query(Note)
+        .filter(Note.user_id == user_id)
+        .order_by(Note.created_at.desc())
+    )
+    if isinstance(limit, int):
+        query = query.limit(limit)
+    return query.all()
+
+
+@router.get(
     "/section/{section_id}",
     response_model=list[NoteResponse]
 )
