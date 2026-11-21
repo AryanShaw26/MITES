@@ -24,14 +24,17 @@ app = FastAPI(
 
 
 # CORS configuration
+# CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://mites.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 # Create database tables
 Base.metadata.create_all(bind=engine)
